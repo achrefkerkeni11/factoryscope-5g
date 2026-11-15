@@ -1,0 +1,2248 @@
+{
+  "modelVersion": "1.0.0",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "duration": 60,
+  "definition": "Moyenne des métriques par graine ; p95 calculé sur les paquets livrés, après vidange.",
+  "summary": [
+    {
+      "scenario": "nominal",
+      "profile": "edge",
+      "label": "5G privée + edge",
+      "sent": 36000,
+      "p95Mean": 9.220099184177815,
+      "p95Min": 9.21829469146207,
+      "p95Max": 9.224018361121416,
+      "onTimeMean": 99.90555555555555,
+      "lossMean": 0.09444444444444444
+    },
+    {
+      "scenario": "nominal",
+      "profile": "cloud",
+      "label": "5G + cloud distant",
+      "sent": 36000,
+      "p95Mean": 50.42039673671126,
+      "p95Min": 50.41317876584828,
+      "p95Max": 50.436073444485665,
+      "onTimeMean": 89.67333333333333,
+      "lossMean": 0.09444444444444444
+    },
+    {
+      "scenario": "nominal",
+      "profile": "wifi",
+      "label": "Wi-Fi de référence",
+      "sent": 36000,
+      "p95Mean": 23.03948174580932,
+      "p95Min": 23.02907058723271,
+      "p95Max": 23.06376906517893,
+      "onTimeMean": 99.18222222222224,
+      "lossMean": 0.8177777777777777
+    },
+    {
+      "scenario": "congestion",
+      "profile": "edge",
+      "label": "5G privée + edge",
+      "sent": 36000,
+      "p95Mean": 109.99834047947274,
+      "p95Min": 109.99235147372578,
+      "p95Max": 110.01254010868628,
+      "onTimeMean": 66.72055555555555,
+      "lossMean": 7.253333333333333
+    },
+    {
+      "scenario": "congestion",
+      "profile": "cloud",
+      "label": "5G + cloud distant",
+      "sent": 36000,
+      "p95Mean": 150.32006684116325,
+      "p95Min": 150.2849420395961,
+      "p95Max": 150.3668299533548,
+      "onTimeMean": 59.61444444444445,
+      "lossMean": 7.253333333333333
+    },
+    {
+      "scenario": "congestion",
+      "profile": "wifi",
+      "label": "Wi-Fi de référence",
+      "sent": 36000,
+      "p95Mean": 122.75197872904053,
+      "p95Min": 122.63319236194754,
+      "p95Max": 122.87675773776233,
+      "onTimeMean": 65.98333333333332,
+      "lossMean": 20.89166666666667
+    },
+    {
+      "scenario": "weak",
+      "profile": "edge",
+      "label": "5G privée + edge",
+      "sent": 36000,
+      "p95Mean": 45.16176867697388,
+      "p95Min": 45.04834009537473,
+      "p95Max": 45.32690784235485,
+      "onTimeMean": 98.54222222222222,
+      "lossMean": 1.4577777777777778
+    },
+    {
+      "scenario": "weak",
+      "profile": "cloud",
+      "label": "5G + cloud distant",
+      "sent": 36000,
+      "p95Mean": 85.73771727185695,
+      "p95Min": 85.59908233879133,
+      "p95Max": 85.93955402954481,
+      "onTimeMean": 59.781111111111116,
+      "lossMean": 1.4577777777777778
+    },
+    {
+      "scenario": "weak",
+      "profile": "wifi",
+      "label": "Wi-Fi de référence",
+      "sent": 36000,
+      "p95Mean": 57.936966447075825,
+      "p95Min": 57.764159059720114,
+      "p95Max": 58.17372073476203,
+      "onTimeMean": 86.21888888888888,
+      "lossMean": 2.1577777777777776
+    },
+    {
+      "scenario": "outage",
+      "profile": "edge",
+      "label": "5G privée + edge",
+      "sent": 36000,
+      "p95Mean": 9.219965999554843,
+      "p95Min": 9.217671051789075,
+      "p95Max": 9.222629390824586,
+      "onTimeMean": 83.25,
+      "lossMean": 16.75
+    },
+    {
+      "scenario": "outage",
+      "profile": "cloud",
+      "label": "5G + cloud distant",
+      "sent": 36000,
+      "p95Mean": 50.41986399821937,
+      "p95Min": 50.4106842071563,
+      "p95Max": 50.430517563298345,
+      "onTimeMean": 74.73944444444444,
+      "lossMean": 16.75
+    },
+    {
+      "scenario": "outage",
+      "profile": "wifi",
+      "label": "Wi-Fi de référence",
+      "sent": 36000,
+      "p95Mean": 23.0394865603745,
+      "p95Min": 23.024977525100113,
+      "p95Max": 23.05549265384674,
+      "onTimeMean": 82.65777777777778,
+      "lossMean": 17.342222222222222
+    }
+  ],
+  "runs": [
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "nominal",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 42
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35977,
+        "dropped": 23,
+        "pending": 0,
+        "onTime": 35977,
+        "late": 0,
+        "onTimeRate": 99.93611111111112,
+        "lossRate": 0.06388888888888888,
+        "p50": 8.31676229339093,
+        "p95": 9.220294323917479,
+        "p99": 9.299767008684576,
+        "mean": 8.321215399029528,
+        "load": 1.536,
+        "reasons": {
+          "random": 23,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "nominal",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 43
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35967,
+        "dropped": 33,
+        "pending": 0,
+        "onTime": 35967,
+        "late": 0,
+        "onTimeRate": 99.90833333333333,
+        "lossRate": 0.09166666666666666,
+        "p50": 8.326340509746224,
+        "p95": 9.224018361121416,
+        "p99": 9.300799572076649,
+        "mean": 8.323874009435919,
+        "load": 1.536,
+        "reasons": {
+          "random": 33,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "nominal",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 44
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35952,
+        "dropped": 48,
+        "pending": 0,
+        "onTime": 35952,
+        "late": 0,
+        "onTimeRate": 99.86666666666666,
+        "lossRate": 0.13333333333333333,
+        "p50": 8.314073213078082,
+        "p95": 9.21829469146207,
+        "p99": 9.301611801311374,
+        "mean": 8.317820330483848,
+        "load": 1.536,
+        "reasons": {
+          "random": 48,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "nominal",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 45
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35965,
+        "dropped": 35,
+        "pending": 0,
+        "onTime": 35965,
+        "late": 0,
+        "onTimeRate": 99.90277777777777,
+        "lossRate": 0.09722222222222222,
+        "p50": 8.316593510266394,
+        "p95": 9.219106395430863,
+        "p99": 9.300316171888262,
+        "mean": 8.318781255880221,
+        "load": 1.536,
+        "reasons": {
+          "random": 35,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "nominal",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 46
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35969,
+        "dropped": 31,
+        "pending": 0,
+        "onTime": 35969,
+        "late": 0,
+        "onTimeRate": 99.91388888888889,
+        "lossRate": 0.08611111111111111,
+        "p50": 8.327634517271072,
+        "p95": 9.218782148957253,
+        "p99": 9.299964195750654,
+        "mean": 8.322710395892729,
+        "load": 1.536,
+        "reasons": {
+          "random": 31,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "nominal",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 42
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35977,
+        "dropped": 23,
+        "pending": 0,
+        "onTime": 32267,
+        "late": 3710,
+        "onTimeRate": 89.63055555555556,
+        "lossRate": 0.06388888888888888,
+        "p50": 46.80704917356372,
+        "p95": 50.421177295669914,
+        "p99": 50.7390680347383,
+        "mean": 46.824861596107105,
+        "load": 1.536,
+        "reasons": {
+          "random": 23,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "nominal",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 43
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35967,
+        "dropped": 33,
+        "pending": 0,
+        "onTime": 32221,
+        "late": 3746,
+        "onTimeRate": 89.50277777777778,
+        "lossRate": 0.09166666666666666,
+        "p50": 46.845362038984895,
+        "p95": 50.436073444485665,
+        "p99": 50.743198288306594,
+        "mean": 46.835496037732646,
+        "load": 1.536,
+        "reasons": {
+          "random": 33,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "nominal",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 44
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35952,
+        "dropped": 48,
+        "pending": 0,
+        "onTime": 32258,
+        "late": 3694,
+        "onTimeRate": 89.60555555555555,
+        "lossRate": 0.13333333333333333,
+        "p50": 46.79629285231233,
+        "p95": 50.41317876584828,
+        "p99": 50.746447205245495,
+        "mean": 46.81128132192431,
+        "load": 1.536,
+        "reasons": {
+          "random": 48,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "nominal",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 45
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35965,
+        "dropped": 35,
+        "pending": 0,
+        "onTime": 32300,
+        "late": 3665,
+        "onTimeRate": 89.72222222222223,
+        "lossRate": 0.09722222222222222,
+        "p50": 46.806374041065574,
+        "p95": 50.41642558172345,
+        "p99": 50.74126468755305,
+        "mean": 46.81512502350981,
+        "load": 1.536,
+        "reasons": {
+          "random": 35,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "nominal",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 46
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35969,
+        "dropped": 31,
+        "pending": 0,
+        "onTime": 32366,
+        "late": 3603,
+        "onTimeRate": 89.90555555555555,
+        "lossRate": 0.08611111111111111,
+        "p50": 46.85053806908429,
+        "p95": 50.41512859582901,
+        "p99": 50.739856783002615,
+        "mean": 46.83084158355988,
+        "load": 1.536,
+        "reasons": {
+          "random": 31,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "nominal",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 42
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35714,
+        "dropped": 286,
+        "pending": 0,
+        "onTime": 35714,
+        "late": 0,
+        "onTimeRate": 99.20555555555555,
+        "lossRate": 0.7944444444444444,
+        "p50": 17.62471769504249,
+        "p95": 23.03819367416203,
+        "p99": 23.51791024055332,
+        "mean": 17.650147962276133,
+        "load": 1.536,
+        "reasons": {
+          "random": 286,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "nominal",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 43
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35684,
+        "dropped": 316,
+        "pending": 0,
+        "onTime": 35684,
+        "late": 0,
+        "onTimeRate": 99.12222222222222,
+        "lossRate": 0.8777777777777778,
+        "p50": 17.67774822782725,
+        "p95": 23.06376906517893,
+        "p99": 23.524858653880656,
+        "mean": 17.662689191165843,
+        "load": 1.536,
+        "reasons": {
+          "random": 316,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "nominal",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 44
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35689,
+        "dropped": 311,
+        "pending": 0,
+        "onTime": 35689,
+        "late": 0,
+        "onTimeRate": 99.1361111111111,
+        "lossRate": 0.8638888888888889,
+        "p50": 17.604358750730754,
+        "p95": 23.02907058723271,
+        "p99": 23.52988743815571,
+        "mean": 17.625638176895627,
+        "load": 1.536,
+        "reasons": {
+          "random": 311,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "nominal",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 45
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35716,
+        "dropped": 284,
+        "pending": 0,
+        "onTime": 35716,
+        "late": 0,
+        "onTimeRate": 99.21111111111111,
+        "lossRate": 0.7888888888888889,
+        "p50": 17.616633894257248,
+        "p95": 23.0346148250252,
+        "p99": 23.521673220545054,
+        "mean": 17.632064066763384,
+        "load": 1.536,
+        "reasons": {
+          "random": 284,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "nominal",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 46
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35725,
+        "dropped": 275,
+        "pending": 0,
+        "onTime": 35725,
+        "late": 0,
+        "onTimeRate": 99.23611111111111,
+        "lossRate": 0.7638888888888888,
+        "p50": 17.686646523289383,
+        "p95": 23.031760577447713,
+        "p99": 23.519250889644027,
+        "mean": 17.6566740496303,
+        "load": 1.536,
+        "reasons": {
+          "random": 275,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "congestion",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 42
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 33400,
+        "dropped": 2600,
+        "pending": 0,
+        "onTime": 24028,
+        "late": 9372,
+        "onTimeRate": 66.74444444444444,
+        "lossRate": 7.222222222222222,
+        "p50": 8.71830666128546,
+        "p95": 109.99631640171914,
+        "p99": 110.60950655038154,
+        "mean": 36.572831600022035,
+        "load": 1.536,
+        "reasons": {
+          "random": 21,
+          "buffer": 2579,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "congestion",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 43
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 33389,
+        "dropped": 2611,
+        "pending": 0,
+        "onTime": 24018,
+        "late": 9371,
+        "onTimeRate": 66.71666666666667,
+        "lossRate": 7.252777777777778,
+        "p50": 8.715804920699448,
+        "p95": 110.01254010868628,
+        "p99": 110.61148981336932,
+        "mean": 36.58145278959378,
+        "load": 1.536,
+        "reasons": {
+          "random": 32,
+          "buffer": 2579,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "congestion",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 44
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 33375,
+        "dropped": 2625,
+        "pending": 0,
+        "onTime": 24009,
+        "late": 9366,
+        "onTimeRate": 66.69166666666666,
+        "lossRate": 7.291666666666667,
+        "p50": 8.715035338122398,
+        "p95": 109.99804041446818,
+        "p99": 110.61374927156989,
+        "mean": 36.5699441590883,
+        "load": 1.536,
+        "reasons": {
+          "random": 46,
+          "buffer": 2579,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "congestion",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 45
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 33387,
+        "dropped": 2613,
+        "pending": 0,
+        "onTime": 24019,
+        "late": 9368,
+        "onTimeRate": 66.71944444444445,
+        "lossRate": 7.258333333333334,
+        "p50": 8.717050200030208,
+        "p95": 109.9924539987643,
+        "p99": 110.6128403580898,
+        "mean": 36.56491738161183,
+        "load": 1.536,
+        "reasons": {
+          "random": 34,
+          "buffer": 2579,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "congestion",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 46
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 33393,
+        "dropped": 2607,
+        "pending": 0,
+        "onTime": 24023,
+        "late": 9370,
+        "onTimeRate": 66.73055555555555,
+        "lossRate": 7.241666666666666,
+        "p50": 8.72195751003921,
+        "p95": 109.99235147372578,
+        "p99": 110.60484571845349,
+        "mean": 36.57540069580962,
+        "load": 1.536,
+        "reasons": {
+          "random": 28,
+          "buffer": 2579,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "congestion",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 42
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 33400,
+        "dropped": 2600,
+        "pending": 0,
+        "onTime": 21471,
+        "late": 11929,
+        "onTimeRate": 59.641666666666666,
+        "lossRate": 7.222222222222222,
+        "p50": 48.4116270185262,
+        "p95": 150.31766370508024,
+        "p99": 151.6198455004543,
+        "mean": 75.07499106575507,
+        "load": 1.536,
+        "reasons": {
+          "random": 21,
+          "buffer": 2579,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "congestion",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 43
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 33389,
+        "dropped": 2611,
+        "pending": 0,
+        "onTime": 21447,
+        "late": 11942,
+        "onTimeRate": 59.575,
+        "lossRate": 7.252777777777778,
+        "p50": 48.40095240406692,
+        "p95": 150.3668299533548,
+        "p99": 151.64917126065677,
+        "mean": 75.09071875768315,
+        "load": 1.536,
+        "reasons": {
+          "random": 32,
+          "buffer": 2579,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "congestion",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 44
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 33375,
+        "dropped": 2625,
+        "pending": 0,
+        "onTime": 21398,
+        "late": 11977,
+        "onTimeRate": 59.43888888888889,
+        "lossRate": 7.291666666666667,
+        "p50": 48.39918485254049,
+        "p95": 150.2849420395961,
+        "p99": 151.6151326188866,
+        "mean": 75.06332060140068,
+        "load": 1.536,
+        "reasons": {
+          "random": 46,
+          "buffer": 2579,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "congestion",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 45
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 33387,
+        "dropped": 2613,
+        "pending": 0,
+        "onTime": 21482,
+        "late": 11905,
+        "onTimeRate": 59.672222222222224,
+        "lossRate": 7.258333333333334,
+        "p50": 48.40466148003936,
+        "p95": 150.33691528349857,
+        "p99": 151.60422745186054,
+        "mean": 75.06436655922616,
+        "load": 1.536,
+        "reasons": {
+          "random": 34,
+          "buffer": 2579,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "congestion",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 46
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 33393,
+        "dropped": 2607,
+        "pending": 0,
+        "onTime": 21508,
+        "late": 11885,
+        "onTimeRate": 59.74444444444445,
+        "lossRate": 7.241666666666666,
+        "p50": 48.42717838257551,
+        "p95": 150.29398322428654,
+        "p99": 151.6347675211456,
+        "mean": 75.08569225807854,
+        "load": 1.536,
+        "reasons": {
+          "random": 28,
+          "buffer": 2579,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "congestion",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 42
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 28484,
+        "dropped": 7516,
+        "pending": 0,
+        "onTime": 23752,
+        "late": 4732,
+        "onTimeRate": 65.97777777777777,
+        "lossRate": 20.877777777777776,
+        "p50": 18.866635194383562,
+        "p95": 122.87675773776233,
+        "p99": 125.75279966510449,
+        "mean": 34.64722542405795,
+        "load": 1.536,
+        "reasons": {
+          "random": 226,
+          "buffer": 7290,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "congestion",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 43
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 28457,
+        "dropped": 7543,
+        "pending": 0,
+        "onTime": 23738,
+        "late": 4719,
+        "onTimeRate": 65.93888888888888,
+        "lossRate": 20.95277777777778,
+        "p50": 18.88160515330732,
+        "p95": 122.77091415311976,
+        "p99": 125.71543632821728,
+        "mean": 34.613791471481065,
+        "load": 1.536,
+        "reasons": {
+          "random": 253,
+          "buffer": 7290,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "congestion",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 44
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 28461,
+        "dropped": 7539,
+        "pending": 0,
+        "onTime": 23742,
+        "late": 4719,
+        "onTimeRate": 65.95,
+        "lossRate": 20.941666666666666,
+        "p50": 18.81235870566219,
+        "p95": 122.74066620668624,
+        "p99": 125.65862723890338,
+        "mean": 34.57525531578851,
+        "load": 1.536,
+        "reasons": {
+          "random": 249,
+          "buffer": 7290,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "congestion",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 45
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 28483,
+        "dropped": 7517,
+        "pending": 0,
+        "onTime": 23759,
+        "late": 4724,
+        "onTimeRate": 65.99722222222222,
+        "lossRate": 20.880555555555556,
+        "p50": 18.791787959039212,
+        "p95": 122.63319236194754,
+        "p99": 125.61112826010891,
+        "mean": 34.60223750841763,
+        "load": 1.536,
+        "reasons": {
+          "random": 227,
+          "buffer": 7290,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "congestion",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 46
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 28510,
+        "dropped": 7490,
+        "pending": 0,
+        "onTime": 23779,
+        "late": 4731,
+        "onTimeRate": 66.05277777777778,
+        "lossRate": 20.805555555555557,
+        "p50": 18.88143817741424,
+        "p95": 122.73836318568671,
+        "p99": 125.69402111002297,
+        "mean": 34.640939998339725,
+        "load": 1.536,
+        "reasons": {
+          "random": 200,
+          "buffer": 7290,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "weak",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 42
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35500,
+        "dropped": 500,
+        "pending": 0,
+        "onTime": 35500,
+        "late": 0,
+        "onTimeRate": 98.61111111111111,
+        "lossRate": 1.3888888888888888,
+        "p50": 8.802689991593361,
+        "p95": 45.21865873125382,
+        "p99": 48.55310268111527,
+        "mean": 17.241984685008017,
+        "load": 1.536,
+        "reasons": {
+          "random": 500,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "weak",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 43
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35479,
+        "dropped": 521,
+        "pending": 0,
+        "onTime": 35479,
+        "late": 0,
+        "onTimeRate": 98.55277777777778,
+        "lossRate": 1.4472222222222222,
+        "p50": 8.803250415883959,
+        "p95": 45.32690784235485,
+        "p99": 48.56027487868443,
+        "mean": 17.25032016963047,
+        "load": 1.536,
+        "reasons": {
+          "random": 521,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "weak",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 44
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35442,
+        "dropped": 558,
+        "pending": 0,
+        "onTime": 35442,
+        "late": 0,
+        "onTimeRate": 98.45,
+        "lossRate": 1.55,
+        "p50": 8.801955525930971,
+        "p95": 45.04834009537473,
+        "p99": 48.416930579748005,
+        "mean": 17.210546078448722,
+        "load": 1.536,
+        "reasons": {
+          "random": 558,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "weak",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 45
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35456,
+        "dropped": 544,
+        "pending": 0,
+        "onTime": 35456,
+        "late": 0,
+        "onTimeRate": 98.4888888888889,
+        "lossRate": 1.511111111111111,
+        "p50": 8.799213858488947,
+        "p95": 45.165470488769934,
+        "p99": 48.454889574721456,
+        "mean": 17.191148338795095,
+        "load": 1.536,
+        "reasons": {
+          "random": 544,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "weak",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 46
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35499,
+        "dropped": 501,
+        "pending": 0,
+        "onTime": 35499,
+        "late": 0,
+        "onTimeRate": 98.60833333333333,
+        "lossRate": 1.3916666666666666,
+        "p50": 8.805098759178072,
+        "p95": 45.04946622711606,
+        "p99": 48.44751424382441,
+        "mean": 17.232214926052276,
+        "load": 1.536,
+        "reasons": {
+          "random": 501,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "weak",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 42
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35500,
+        "dropped": 500,
+        "pending": 0,
+        "onTime": 21535,
+        "late": 13965,
+        "onTimeRate": 59.81944444444444,
+        "lossRate": 1.3888888888888888,
+        "p50": 48.750759966373444,
+        "p95": 85.80724956042133,
+        "p99": 89.88268105469643,
+        "mean": 55.74504615951898,
+        "load": 1.536,
+        "reasons": {
+          "random": 500,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "weak",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 43
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35479,
+        "dropped": 521,
+        "pending": 0,
+        "onTime": 21507,
+        "late": 13972,
+        "onTimeRate": 59.74166666666667,
+        "lossRate": 1.4472222222222222,
+        "p50": 48.753001663535834,
+        "p95": 85.93955402954481,
+        "p99": 89.89144707394763,
+        "mean": 55.762355420079,
+        "load": 1.536,
+        "reasons": {
+          "random": 521,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "weak",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 44
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35442,
+        "dropped": 558,
+        "pending": 0,
+        "onTime": 21455,
+        "late": 13987,
+        "onTimeRate": 59.59722222222222,
+        "lossRate": 1.55,
+        "p50": 48.747822103723884,
+        "p95": 85.59908233879133,
+        "p99": 89.71624848635867,
+        "mean": 55.70525525018443,
+        "load": 1.536,
+        "reasons": {
+          "random": 558,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "weak",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 45
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35456,
+        "dropped": 544,
+        "pending": 0,
+        "onTime": 21538,
+        "late": 13918,
+        "onTimeRate": 59.827777777777776,
+        "lossRate": 1.511111111111111,
+        "p50": 48.73685543395579,
+        "p95": 85.74224170849658,
+        "p99": 89.76264281354844,
+        "mean": 55.68747270399839,
+        "load": 1.536,
+        "reasons": {
+          "random": 544,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "weak",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 46
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35499,
+        "dropped": 501,
+        "pending": 0,
+        "onTime": 21571,
+        "late": 13928,
+        "onTimeRate": 59.919444444444444,
+        "lossRate": 1.3916666666666666,
+        "p50": 48.76039503671229,
+        "p95": 85.60045872203074,
+        "p99": 89.75362852022982,
+        "mean": 55.74036415174257,
+        "load": 1.536,
+        "reasons": {
+          "random": 501,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "weak",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 42
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35235,
+        "dropped": 765,
+        "pending": 0,
+        "onTime": 31017,
+        "late": 4218,
+        "onTimeRate": 86.15833333333333,
+        "lossRate": 2.125,
+        "p50": 20.541451852172614,
+        "p95": 58.01964344653301,
+        "p99": 62.59013083238155,
+        "mean": 26.56715875990656,
+        "load": 1.536,
+        "reasons": {
+          "random": 765,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "weak",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 43
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35224,
+        "dropped": 776,
+        "pending": 0,
+        "onTime": 31019,
+        "late": 4205,
+        "onTimeRate": 86.16388888888889,
+        "lossRate": 2.1555555555555554,
+        "p50": 20.535133699290455,
+        "p95": 58.17372073476203,
+        "p99": 62.59889520412311,
+        "mean": 26.594806309449645,
+        "load": 1.536,
+        "reasons": {
+          "random": 776,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "weak",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 44
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35197,
+        "dropped": 803,
+        "pending": 0,
+        "onTime": 30969,
+        "late": 4228,
+        "onTimeRate": 86.025,
+        "lossRate": 2.2305555555555556,
+        "p50": 20.531733155585826,
+        "p95": 57.79112812141888,
+        "p99": 62.397328799460084,
+        "mean": 26.525256715207902,
+        "load": 1.536,
+        "reasons": {
+          "random": 803,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "weak",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 45
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35202,
+        "dropped": 798,
+        "pending": 0,
+        "onTime": 31081,
+        "late": 4121,
+        "onTimeRate": 86.33611111111111,
+        "lossRate": 2.216666666666667,
+        "p50": 20.51466020230204,
+        "p95": 57.936180872945116,
+        "p99": 62.45447830609977,
+        "mean": 26.498631415758297,
+        "load": 1.536,
+        "reasons": {
+          "random": 798,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "weak",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 46
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 35258,
+        "dropped": 742,
+        "pending": 0,
+        "onTime": 31108,
+        "late": 4150,
+        "onTimeRate": 86.41111111111111,
+        "lossRate": 2.061111111111111,
+        "p50": 20.54322450734675,
+        "p95": 57.764159059720114,
+        "p99": 62.44217428668402,
+        "mean": 26.552549053747637,
+        "load": 1.536,
+        "reasons": {
+          "random": 742,
+          "buffer": 0,
+          "outage": 0
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "outage",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 42
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 29981,
+        "dropped": 6019,
+        "pending": 0,
+        "onTime": 29981,
+        "late": 0,
+        "onTimeRate": 83.28055555555555,
+        "lossRate": 16.719444444444445,
+        "p50": 8.316082186233253,
+        "p95": 9.217671051789075,
+        "p99": 9.299608470574022,
+        "mean": 8.32060009143159,
+        "load": 1.536,
+        "reasons": {
+          "random": 19,
+          "buffer": 0,
+          "outage": 6000
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "outage",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 43
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 29970,
+        "dropped": 6030,
+        "pending": 0,
+        "onTime": 29970,
+        "late": 0,
+        "onTimeRate": 83.25,
+        "lossRate": 16.75,
+        "p50": 8.324366164561361,
+        "p95": 9.222629390824586,
+        "p99": 9.300240143369884,
+        "mean": 8.322568285646083,
+        "load": 1.536,
+        "reasons": {
+          "random": 30,
+          "buffer": 0,
+          "outage": 6000
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "outage",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 44
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 29957,
+        "dropped": 6043,
+        "pending": 0,
+        "onTime": 29957,
+        "late": 0,
+        "onTimeRate": 83.21388888888889,
+        "lossRate": 16.78611111111111,
+        "p50": 8.311533839143813,
+        "p95": 9.220065414141864,
+        "p99": 9.30250336619094,
+        "mean": 8.317149941103454,
+        "load": 1.536,
+        "reasons": {
+          "random": 43,
+          "buffer": 0,
+          "outage": 6000
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "outage",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 45
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 29969,
+        "dropped": 6031,
+        "pending": 0,
+        "onTime": 29969,
+        "late": 0,
+        "onTimeRate": 83.24722222222222,
+        "lossRate": 16.752777777777776,
+        "p50": 8.318378452844918,
+        "p95": 9.219970933329314,
+        "p99": 9.300996551457793,
+        "mean": 8.32086910294773,
+        "load": 1.536,
+        "reasons": {
+          "random": 31,
+          "buffer": 0,
+          "outage": 6000
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "edge",
+        "scenario": "outage",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 46
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 29973,
+        "dropped": 6027,
+        "pending": 0,
+        "onTime": 29973,
+        "late": 0,
+        "onTimeRate": 83.25833333333334,
+        "lossRate": 16.741666666666667,
+        "p50": 8.330784350335598,
+        "p95": 9.219493207689375,
+        "p99": 9.300660718400032,
+        "mean": 8.324077057449204,
+        "load": 1.536,
+        "reasons": {
+          "random": 27,
+          "buffer": 0,
+          "outage": 6000
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "outage",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 42
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 29981,
+        "dropped": 6019,
+        "pending": 0,
+        "onTime": 26937,
+        "late": 3044,
+        "onTimeRate": 74.825,
+        "lossRate": 16.719444444444445,
+        "p50": 46.80432874493301,
+        "p95": 50.4106842071563,
+        "p99": 50.738433882296086,
+        "mean": 46.82240036570567,
+        "load": 1.536,
+        "reasons": {
+          "random": 19,
+          "buffer": 0,
+          "outage": 6000
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "outage",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 43
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 29970,
+        "dropped": 6030,
+        "pending": 0,
+        "onTime": 26865,
+        "late": 3105,
+        "onTimeRate": 74.625,
+        "lossRate": 16.75,
+        "p50": 46.837464658245445,
+        "p95": 50.430517563298345,
+        "p99": 50.74096057347953,
+        "mean": 46.83027314256363,
+        "load": 1.536,
+        "reasons": {
+          "random": 30,
+          "buffer": 0,
+          "outage": 6000
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "outage",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 44
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 29957,
+        "dropped": 6043,
+        "pending": 0,
+        "onTime": 26839,
+        "late": 3118,
+        "onTimeRate": 74.55277777777778,
+        "lossRate": 16.78611111111111,
+        "p50": 46.78613535657525,
+        "p95": 50.420261656567455,
+        "p99": 50.75001346476376,
+        "mean": 46.80859976439308,
+        "load": 1.536,
+        "reasons": {
+          "random": 43,
+          "buffer": 0,
+          "outage": 6000
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "outage",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 45
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 29969,
+        "dropped": 6031,
+        "pending": 0,
+        "onTime": 26920,
+        "late": 3049,
+        "onTimeRate": 74.77777777777777,
+        "lossRate": 16.752777777777776,
+        "p50": 46.81351381137967,
+        "p95": 50.419883733317256,
+        "p99": 50.74398620583117,
+        "mean": 46.82347641177021,
+        "load": 1.536,
+        "reasons": {
+          "random": 31,
+          "buffer": 0,
+          "outage": 6000
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "cloud",
+        "scenario": "outage",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 46
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 29973,
+        "dropped": 6027,
+        "pending": 0,
+        "onTime": 26970,
+        "late": 3003,
+        "onTimeRate": 74.91666666666667,
+        "lossRate": 16.741666666666667,
+        "p50": 46.86313740134239,
+        "p95": 50.4179728307575,
+        "p99": 50.742642873600126,
+        "mean": 46.836308229776115,
+        "load": 1.536,
+        "reasons": {
+          "random": 27,
+          "buffer": 0,
+          "outage": 6000
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "outage",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 42
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 29761,
+        "dropped": 6239,
+        "pending": 0,
+        "onTime": 29761,
+        "late": 0,
+        "onTimeRate": 82.66944444444445,
+        "lossRate": 17.330555555555556,
+        "p50": 17.619844425804914,
+        "p95": 23.024977525100113,
+        "p99": 23.516072441227735,
+        "mean": 17.647022469718767,
+        "load": 1.536,
+        "reasons": {
+          "random": 239,
+          "buffer": 0,
+          "outage": 6000
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "outage",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 43
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 29745,
+        "dropped": 6255,
+        "pending": 0,
+        "onTime": 29745,
+        "late": 0,
+        "onTimeRate": 82.625,
+        "lossRate": 17.375,
+        "p50": 17.6660080229491,
+        "p95": 23.05549265384674,
+        "p99": 23.5214408602193,
+        "mean": 17.654384151351113,
+        "load": 1.536,
+        "reasons": {
+          "random": 255,
+          "buffer": 0,
+          "outage": 6000
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "outage",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 44
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 29736,
+        "dropped": 6264,
+        "pending": 0,
+        "onTime": 29736,
+        "late": 0,
+        "onTimeRate": 82.6,
+        "lossRate": 17.4,
+        "p50": 17.588832149617375,
+        "p95": 23.03924723468721,
+        "p99": 23.53590594917536,
+        "mean": 17.62248585666253,
+        "load": 1.536,
+        "reasons": {
+          "random": 264,
+          "buffer": 0,
+          "outage": 6000
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "outage",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 45
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 29764,
+        "dropped": 6236,
+        "pending": 0,
+        "onTime": 29764,
+        "late": 0,
+        "onTimeRate": 82.67777777777778,
+        "lossRate": 17.322222222222223,
+        "p50": 17.6286795245111,
+        "p95": 23.04107937064022,
+        "p99": 23.525979308746756,
+        "mean": 17.645823331411616,
+        "load": 1.536,
+        "reasons": {
+          "random": 236,
+          "buffer": 0,
+          "outage": 6000
+        }
+      }
+    },
+    {
+      "modelVersion": "1.0.0",
+      "config": {
+        "profile": "wifi",
+        "scenario": "outage",
+        "devices": 120,
+        "frequency": 5,
+        "payload": 256,
+        "overhead": 64,
+        "deadline": 50,
+        "buffer": 100,
+        "seed": 46
+      },
+      "duration": 60,
+      "metrics": {
+        "sent": 36000,
+        "delivered": 29778,
+        "dropped": 6222,
+        "pending": 0,
+        "onTime": 29778,
+        "late": 0,
+        "onTimeRate": 82.71666666666667,
+        "lossRate": 17.283333333333335,
+        "p50": 17.705196591429413,
+        "p95": 23.036636017598212,
+        "p99": 23.523400247432292,
+        "mean": 17.66431601665599,
+        "load": 1.536,
+        "reasons": {
+          "random": 222,
+          "buffer": 0,
+          "outage": 6000
+        }
+      }
+    }
+  ]
+}

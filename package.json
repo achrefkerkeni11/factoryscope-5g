@@ -1,0 +1,15 @@
+{
+  "name": "factoryscope-5g",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Laboratoire pédagogique de supervision et de dimensionnement IIoT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "experiment": "node scripts/experiment.mjs"
+  }
+}
